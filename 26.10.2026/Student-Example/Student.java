@@ -2,12 +2,13 @@ class Student {
 	int id;
 	String name;
 	
-	void setStudent(){
-		id = 13;
-		name = "Ramsan";		
+	void setStudent(int id ,String name ){ 	//parameters  
+		 id = 10;
+		this.id = id;           //this key instant variable //
+		this.name = name;	
 	}
 	void getStudent(){
-		System.out.println("ID:" + id);
-		System.out.println("Name:"+ name);
+		System.out.println("ID:" + this.id);
+		System.out.println("Name:"+ this.name);
 	}
 }
